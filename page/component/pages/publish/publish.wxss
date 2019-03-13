@@ -1,0 +1,172 @@
+page {
+  background: white
+}
+.banner{ height: 187.5rpx; }
+.banner-img{ width:100%; height: 100%; }
+.publish_type_text{font-size: 14px;margin-left: 10px;color:#666;}
+.content{
+  padding:15px;
+  padding-top:7px;
+}
+.flex-wrp {
+  width:100%;
+  list-style: none;
+  display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+}
+.flex-item {
+  width:100%;
+  margin:7px;
+  background-color: #fff;
+  color:#666;
+  border-radius:10px;
+  padding:1.1rem;
+}
+.flex-item image{
+  display: block;
+  width:40px;
+  height:40px;
+  margin: auto;
+}
+ .flex-item text{
+   display: block;
+   font-size:14px;
+   text-align: center;
+ }
+ .header {
+  background-color: white;
+  padding: 30rpx;
+}
+
+.header_text {
+  background-color: #e6f5ff;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+.select {
+  height: 75rpx;
+  border-bottom: 1rpx solid #eee;
+  background: #fff;
+}
+
+.xian {
+  width: 60rpx;
+  height: 1rpx;
+  background-color: #999;
+}
+
+.select_text {
+  margin: 0rpx 25rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.content {
+  padding: 10rpx;
+  background: #fff;
+}
+
+.content_list {
+  width: 20%;
+  height: 140rpx;
+  font-size: 28rpx;
+  color: #666;
+  /* margin: 15rpx 20rpx 0rpx; */
+  text-align: center;
+}
+.flex1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*——————————版块部分开始——————————  */
+
+.section {
+  background-color: white;
+  margin-top: 12rpx;
+  padding: 20rpx 20rpx 0rpx;
+}
+
+.section>view:nth-child(2) {
+  margin-left: 20rpx;
+}
+
+.section>view:nth-child(4) {
+  margin-left: 20rpx;
+}
+
+.section_box {
+  width: 42%;
+  height: 150rpx;
+  border-radius: 10rpx;
+  color: white;
+  padding: 0rpx 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.section_box1 {
+  background-color: #ec6744;
+}
+
+.section_box2 {
+  background-color: #73c877;
+}
+
+.section_box3 {
+  background-color: #53a5f7;
+}
+
+.section_box4 {
+  background-color: #f4b54e;
+}
+
+.bold {
+  color: orange;
+}
+
+.section_margin {
+  /* margin-left: 2%; */
+}
+
+.hongbao_text2 {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.section_img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.hongbao_text {
+  font-size: 20rpx;
+  border: 2rpx solid white;
+  border-radius: 50rpx;
+  padding: 7rpx 15rpx;
+  margin-top: 20rpx;
+}
+.flex2{
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-bet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*——————————版块部分结束——————————  */
+.jishu-text{
+  position: absolute;
+ padding-bottom: 20px;
+  /* left,right */
+  left: 80px;
+  right:80px;
+  font-size:12px;
+  text-align: center;
+  color: darkgray;
+}

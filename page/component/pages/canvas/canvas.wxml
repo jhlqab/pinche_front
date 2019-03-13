@@ -1,0 +1,35 @@
+<!--pages/test/canvas.wxml-->
+  
+<!-- 画布大小按需定制 这里我按照背景图的尺寸定的  <canvas canvas-id="shareImg" class='{{classc}}'> -->
+<canvas bindtap="showimg" canvas-id="shareImg" hidden='{{!hidden}}' style='height:100%;width:100%;'>
+  <!-- <cover-view  class="modal-dialog">
+    <cover-view class="modal-title">
+      <cover-view id="share" class="cover-forward share button" bindtap='onShareAppMessage' open-type="share" style='color:#fff;'>转发到好友或群聊</cover-view>  
+    </cover-view>
+    <cover-view class="modal-title">    
+      <cover-view class="cover-save" bindtap="save">生成朋友圈分享图</cover-view>
+    </cover-view>
+    <cover-view class="modal-footer">
+      <cover-view class="cover-back" bindtap="goback">← 返回</cover-view>
+    </cover-view>
+  </cover-view>  -->
+</canvas>
+ 
+
+<!-- 预览区域  <view hidden='{{hidden}}' class='preview'>  -->
+<view hidden='{{hidden}}' class='preview' style='background-color:{{bjColor}}'> 
+   <image src='{{prurl}}' mode='widthFix' bindtap="showimg"></image> 
+  <view class="modal-dialog">
+    <view class="modal-title">
+      <button type ="primary" class='btn-forward' open-type="share" style='color:#fff;'>转发到好友或群聊</button>
+    </view>
+    <view class="modal-title">
+      <button type ="default" class='btn-save' bindtap="save">生成朋友圈分享图</button>
+    </view>
+    <view class="modal-title">
+      <view class='btn-back' bindtap="goback">←返回</view>
+
+    </view>
+  </view>
+
+</view>

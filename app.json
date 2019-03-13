@@ -1,0 +1,76 @@
+{
+  "pages":[
+    "page/component/index",
+        "page/component/pages/haibao/haibao",
+    "page/component/pages/pay/pay",
+    "page/component/pages/contact-info/contact-info",
+    "page/component/pages/post-find-people/post-find-people",
+    "page/component/pages/post-find-car/post-find-car",
+    "page/component/pages/post-goods-find-car/post-goods-find-car",
+    "page/component/pages/post-find-goods/post-find-goods",
+
+
+    "page/component/pages/post-find-people-edit/post-find-people-edit",
+    "page/component/pages/post-find-car-edit/post-find-car-edit",
+    "page/component/pages/post-goods-find-car-edit/post-goods-find-car-edit",
+    "page/component/pages/post-find-goods-edit/post-find-goods-edit",
+
+    "page/component/pages/my-posted/my-posted",
+    "page/component/pages/filter-info/filter-info",
+ 
+    "page/component/pages/statement/statement",
+    "page/component/pages/common-problem/common-problem",
+  
+    "page/component/pages/my-message/my-message",
+    "page/component/pages/top-mypost/top-mypost",
+    "page/component/pages/pinche_detail_cfg/pinche_detail_cfg",
+    "page/component/pages/pinche_detail_cfp/pinche_detail_cfp",
+    "page/component/pages/pinche_detail_gfc/pinche_detail_gfc",
+    "page/component/pages/pinche_detail_car/pinche_detail_car",
+    "page/component/pages/publish/publish",
+    "page/component/pages/pay-history/pay-history",
+    "page/component/pages/payment/payment",
+
+      "page/component/pages/canvas/canvas"
+  ],
+  "window":{
+    "navigationBarBackgroundColor": "#17a976",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#EFEFF4",
+    "navigationBarTitleText": "人人拼车"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#17a976",
+    "borderStyle": "#17a976",
+    "list": [
+      {
+        "pagePath": "page/component/index",
+        "text": "首页",
+        "iconPath": "page/component/resources/pic/1.png",
+        "selectedIconPath": "page/component/resources/pic/11.png"
+      },
+      {
+        "pagePath": "page/component/pages/publish/publish",
+        "text": "发布",
+        "iconPath": "page/component/resources/pic/2.png",
+        "selectedIconPath": "page/component/resources/pic/2.1.png"
+      },
+      {
+        "pagePath": "page/component/pages/my-message/my-message",
+        "text": "我的",
+        "iconPath": "page/component/resources/pic/3.png",
+        "selectedIconPath": "page/component/resources/pic/33.png"
+      }
+    
+    ]
+  },
+  
+  "debug": true
+}

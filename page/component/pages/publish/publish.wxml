@@ -1,0 +1,95 @@
+<view class="page">
+  <!-- <view class="banner" bindtap="tapBanner">
+    <image class="banner-img" src="{{banner}}"></image>
+  </view>  -->
+<swiper style='height:120px' indicator-dots="{{indicatorDots}}"  
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">  
+        <block wx:for="{{imgUrls}}">  
+          <swiper-item>  
+            <navigator hover-class="navigator-hover">  
+              <image style='width:100%;height:120px' src="{{item.url}}" class="slide-image"/>  
+            </navigator>   
+          </swiper-item>  
+        </block>  
+</swiper> 
+<view class="header">
+  <view class="header_text">免责声明：平台发布的所有信息（收费、免费）；平台只负责发布、展示，与平台本身无关，平台不负任何责任。</view>
+</view>
+<view class="select flex1">
+  <view class="xian"></view>
+  <view class="select_text">请选择您要发布的栏目</view>
+  <view class="xian"></view>
+</view>
+ <!-- 导航模块开始 -->
+   <view class="section flex2">
+
+<view class="section_box section_box1 flex-bet" style='background:#ffba00' bindtap='goPeopleFindCar'>
+  
+<view>
+
+<view class="hongbao_text2">人找车</view>
+<view class="hongbao_text">回家的路上不再孤单</view>
+</view>
+<image class="section_img"src="/page/component/resources/pic/111.png"></image>
+
+</view>
+
+<view class="section_box section_box2 flex-bet section_margin" bindtap='goCarFindPeople' style='background-color:#00BFB2'>
+<view>
+<view class="hongbao_text2">车找人</view>
+<view class="hongbao_text">节能环保，绿色出行</view>
+</view>
+<image class="section_img"src="/page/component/resources/pic/222.png"></image>
+</view>
+
+</view>
+    <!-- 导航模块结束 -->
+    <!-- 导航模块开始 -->
+   <view class="section flex2">
+
+<view class="section_box section_box1 flex-bet" style='background:#45C2FB' bindtap='goCarFindGoods'>
+  
+<view>
+
+<view class="hongbao_text2">车找货</view>
+<view class="hongbao_text">回家的路上不再孤单</view>
+</view>
+<image class="section_img"src="/page/component/resources/pic/333.png"></image>
+
+</view>
+
+<view class="section_box section_box2 flex-bet section_margin" bindtap='goGoodsFindCar' style='background-color:#DF81F6'>
+<view>
+<view class="hongbao_text2">货找车</view>
+<view class="hongbao_text">节能环保，绿色出行</view>
+</view>
+<image class="section_img"src="/page/component/resources/pic/444.png"></image>
+</view>
+
+</view>
+    <!-- 导航模块结束 -->
+<view class="content">
+    <text class='publish_type_text'></text>
+</view>
+ <!--<view class="flex-wrp">
+    <view class="flex-item" bindtap="goPeopleFindCar">
+     <image src="{{img2}}"></image>
+     <text>人找车</text>
+    </view>
+    <view class="flex-item" bindtap="goCarFindPeople">
+     <image src="{{img4}}"></image>
+     <text>车找人</text>
+    </view>
+</view>  
+  <!--<view class="flex-wrp">
+    <view class="flex-item"bindtap="goGoodsFindCar">
+     <image src="{{img3}}"></image>
+     <text>货找车</text>
+    </view>
+    <view class="flex-item"bindtap="goCarFindGoods">
+     <image src="{{img1}}"></image>
+     <text>车找货</text>
+    </view> 
+</view>-->
+</view>
+<view class="jishu-text" style='margin-top:30px'>小宝程序 提供技术支持</view>

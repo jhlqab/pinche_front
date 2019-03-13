@@ -1,0 +1,17 @@
+<view class="page-fullscreen">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="{{iconType}}" size="94"/>
+        </view>
+        <view class="weui-msg__text-area">
+            <text class="weui-msg__title">发布成功</text>
+            <text class="weui-msg__desc">急着拼车？支付一元即可置顶您的拼车信息哦！</text>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="mag-submit-btn" type="primary">立即置顶</button>
+                <button class="mag-submit-btn btn-known" type="default">我知道了</button>
+            </view>
+        </view>
+    </view>
+</view>

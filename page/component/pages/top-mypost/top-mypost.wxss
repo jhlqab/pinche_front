@@ -1,0 +1,6 @@
+.contact-form .weui-cell_access:active {
+    background: #fff;
+}
+.contact-form .weui-input{ text-align: right; padding-right: 10px; box-sizing: border-box; }
+
+.contact-form .weui-select{ text-align: right; padding-right: 10px; box-sizing:border-box; } 

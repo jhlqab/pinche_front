@@ -1,0 +1,88 @@
+.contact-form .weui-cell_access:active {
+    background: rgba(0,0,0,0);
+}
+.contact-form .weui-input{ text-align: right; padding-right: 10px; box-sizing: border-box; }
+.contact-form .sex-text{ text-align: right; }
+.jishu-text{
+  position: absolute;
+ padding-bottom: 20px;
+  left: 80px;
+  right:80px;
+  font-size:12px;
+  text-align: center;
+  color: darkgray;
+}
+.pinche-type{
+  background: #fff;
+  padding:10px 15px;
+  color:#333;
+  font-size:15px;
+  margin-top:.77rem;
+}
+.submit-form-top-title.need-offsety{
+margin-top:30px;
+}
+.pay-box{
+  font-size:13px;
+    padding:10px 15px;
+    background: #fff;
+}
+.pay-box .infor{
+  display: inline-block;
+    line-height:2.3;
+}
+.pay-box  .pay-btn{
+ color: #fff;
+ }
+.switchs-box{
+   margin-top:.77rem;
+    background: #fff;
+    font-size:15px;
+    padding:10px 15px;
+ }
+ .switchs-box .switch-text{
+   display: inline-block;
+padding-top:6px;
+ }
+ .isTop{
+   margin-top:0;
+ }
+ .isTopTime,.isTopBtn{
+   border:1px solid #ddd;
+   margin-right:3px;
+   padding:6px 15px;
+ }
+ .isTopText{
+   color:#FF7F00;
+ }
+.isTopBtn{
+padding:6px 10px;
+ }
+ .isTopColor999{
+   color:#999;
+ }
+ .isTopTips{
+   padding-left: 0;
+   padding-right: 0;
+   padding-top: 0;
+ }
+.jubao_btn{width:96%;margin-top:10rpx;}
+.qk_tips_txt{width:100%;font-size: 28rpx;padding:10rpx;margin:10rpx 0;}
+.qk_tips{width: 100%;display: flex;flex-wrap:wrap;}
+.qk_tips text{background: #FBCE80;color: #ffffff;font-size: 28rpx;
+padding:10rpx 10rpx;margin:8rpx;border-radius: 8rpx;
+}
+
+form{width: 100%;}
+.user_logo{margin-top:10rpx;}
+
+.user_logo{}
+.user_logo image{width:148rpx;height:148rpx;border-radius: 50%;}
+.user_nickname{margin-bottom: 30rpx;}
+
+.c_gray{color: gray;}
+.i_input{padding: 10rpx;background: #ffffff;margin-bottom: 10rpx;}
+.i_lable{display: flex;justify-content: space-between;align-items: center;}
+.i_lable text{padding:10rpx;font-size:28rpx;width:auto;}
+.i_ipt{padding:0rpx 30rpx;}
+.i_ipt input{font-size: 28rpx;}

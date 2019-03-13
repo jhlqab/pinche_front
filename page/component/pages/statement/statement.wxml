@@ -1,0 +1,10 @@
+<import src="../../resources/lib/wxParse/wxParse.wxml"/> 
+<!-- <video  src="http://xumuvy.sdhnsw.cn/wxb/g.mp4" style="width: 100%"></video> -->
+<view class="page page-state">
+     
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+
+</view>
+
+
+

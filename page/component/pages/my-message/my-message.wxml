@@ -1,0 +1,124 @@
+
+
+<view class="page page-form">
+  <view class="userbackground pay-box  clearfix submit-form-top-title">
+     <image class='username'style= 'border:5px solid rgba(255,255,255,0.1);' src='{{userimg}}'></image>
+     <text class='name'>{{username}}</text>
+  </view>
+  <!--我的钱包积分部分开始  -->
+  <view class='logs_content' style='margin-bottom:-30rpx;border-bottom:1px solid #ff8400;'>
+    <view class='content_left' bindtap='myPublish'>
+      <view class='content_left1'>
+        <text class='content_font'>{{usermsgcount}}</text>
+        <text class='content_coll'>条</text>
+      </view>
+      <view class='content_integral'>信息</view>
+    </view>
+    <view class='content_left' bindtap='topayment'>
+      <view class='content_middle'>
+        <text class='content_font'>{{useramount}}</text>
+        <text class='content_coll'>元</text>
+      </view>
+      <view class='content_integral'>余额</view>
+    </view>
+    <view class='content_left'>
+      <view class='content_right'>
+        
+      </view>
+      <view class='content_integral'> <button size="mini"  bindtap='topayment' class="pay-btn bg-color fr" style='border-radius: 7px;color:white;'>去充值</button> </view>
+    </view>
+  </view>
+
+   <!-- <view class="pay-box font-color clearfix submit-form-top-title pinche-type">
+    <text class="infor">我的钱包</text>
+     <button size="mini"  bindtap='topayment' class="pay-btn bg-color fr" style='border-radius: 10%;'>去充值</button> 
+  </view>
+  <view class="weui-cells contact-form">
+    <view bindtap="myPublish" class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd">
+        <text class="weui-label">我的发布</text>
+      </view>
+       <view class="weui-input">{{usermsgcount}}</view> 
+      <view class="weui-cell__ft"></view>
+    </view>
+  </view>
+  <view class="weui-cells contact-form">
+    <view bindtap="payHistory" class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd">
+        <text class="weui-label">充值记录</text>
+      </view>
+       <view class="weui-input"></view> 
+      <view class="weui-cell__ft"></view>
+    </view>
+  </view>
+  <view class="weui-cells contact-form">
+    <view bindtap="pincheQRcode" class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd">
+        <text class="weui-label">分享二维码</text>
+      </view>
+      <view class="weui-input"></view> 
+      <view class="weui-cell__ft"></view>
+    </view>
+  </view>
+  <view class="weui-cells contact-form">
+    <view bindtap="pincheAgreement" class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd">
+        <text class="weui-label">拼车协议</text>
+      </view>
+      <view class="weui-input"></view> 
+      <view class="weui-cell__ft"></view>
+    </view>
+  </view>
+  <view class="weui-cells contact-form">
+    <view bindtap="commonProblem" class="weui-cell weui-cell_access">
+      <view class="weui-cell__hd">
+        <text class="weui-label">常见问题</text>
+      </view>
+      <view class="weui-input"></view> 
+      <view class="weui-cell__ft"></view>
+    </view>
+  </view>-->
+  </view> 
+    <view class="item_m mt8" style='margin-bottom:30rpx;'>
+<view class="item_m_v righticon_gray" bindtap="myPublish"><image src="/page/common/images/my_send.png" mode="widthFix"/>我发布的</view>
+</view>
+   <view class="item_m mt8" style='margin-bottom:4rpx;'>
+<view class="item_m_v righticon_gray" bindtap="topayment"><image src="/page/common/images/qian.png" mode="widthFix"/>我的钱包</view>
+</view>
+
+
+  <view class="item_m mt8" style='margin-bottom:4rpx; '>
+<view class="item_m_v righticon_gray" bindtap="payHistory"><image src="/page/common/images/chong.png" mode="widthFix"/>充值记录</view>
+</view>
+
+<view class="item_m"style='margin-bottom:30rpx;'>
+ 
+<view class="item_m_v righticon_gray" bindtap="zhuanfa"><image src="/page/common/images/zhuan.png" mode="widthFix"/>分享推广 <text style='margin:0 10px 0 190px;color:grey;font-size:10px;'>赚取佣金</text> </view>
+ 
+</view>
+
+<!--<view class="item_m"style='margin-bottom:30rpx;'>
+ 
+<view class="item_m_v righticon_gray" bindtap="zhuanfa1"><image src="/page/common/images/lian.png" mode="widthFix"/>拼车联盟 <text style='margin:0 10px 0 180px;color:grey;font-size:10px;'>寻合作伙伴</text> </view>
+ 
+</view>-->
+
+<view class="item_m" style='margin-bottom:4rpx;'>
+<view class="item_m_v righticon_gray" bindtap="pincheAgreement"><image src="/page/common/images/edit.png" mode="widthFix"/>拼车协议</view>
+</view>
+
+
+
+
+<view class="item_m mt8" style='margin-bottom:4rpx;'>
+<view class="item_m_v righticon_gray" bindtap="commonProblem"><image src="/page/common/images/wen.png" mode="widthFix"/>常见问题 <text style='margin:0 10px 0 160px;color:grey;font-size:10px;'>小程序使用手册</text> </view>
+</view>
+<view class="item_m mt8">
+
+<view class="item_m_v righticon_gray" style='padding:8rpx 24rpx;'><image src="/page/common/images/kefu.png" style='margin-right:5rpx;' mode="widthFix"/>
+<button open-type="contact" plain="false" type="default" class='kefuweapp'>投诉建议</button>
+</view>
+</view>
+
+
+<view class="jishu-text" style='margin-top:30px'>小宝程序 提供技术支持</view>

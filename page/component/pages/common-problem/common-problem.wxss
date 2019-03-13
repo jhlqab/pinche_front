@@ -1,0 +1,36 @@
+@import "../../resources/lib/wxParse/wxParse.wxss";
+
+.page-state{ padding: 1.2rem 1rem; background-color: #fff; }
+.page-state text{ display: block; line-height: 1.4;  font-size: 14px;}
+.page-state .main-title{ font-size: 20px; margin-bottom: 6px; }
+.page-state .sub-title{ font-size: 17px; margin: 1.25rem 0 0 0; }
+.page-state .paragraph{ padding-left: 17px; position: relative; margin-top: 0.225rem; }
+.page-state .paragraph .dot{ position: absolute; left:4px; top:5px; width: 5px; height: 5px; background-color: #333; border-radius: 5px; }
+
+.wxParse-p{ line-height: 24px; font-size: 16px; margin: 0 0 12px 0; }
+
+.jishu-text{
+  position: absolute;
+  bottom: 20px;
+  /* left,right */
+  left: 80px;
+  right:80px;
+  font-size:12px;
+  text-align: center;
+  color: darkgray;
+}
+.text-indent2{
+  text-indent: 2em;
+}
+.font-weight{
+  font-weight: bold;
+  font-size: 16px;
+  padding: 2rem 0 1rem 0;
+}
+.font-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 30rpx;
+  color:red;
+}
+

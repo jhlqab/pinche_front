@@ -1,0 +1,21 @@
+<view style='margin:40rpx 5rpx'>
+ <view  style='margin:20rpx;background-color:	#F6CB90;border-radius: 15px;'>
+  <scroll-view class="scroll"    scroll-top="{{scrollTop}}" style="height:580px;" scroll-y="true" bindscroll="scrll"  bindscrolltolower="loadMore">
+  <view class="block"style='margin:20rpx;background-color:white;border-radius: 30px;'>
+    <text class="amount">充值(¥)</text>
+    <text class="give_amount">赠送(¥)</text>
+    <text class="type">类型</text>
+    <text class="status">状态</text>
+    <text class="create_time">时间</text>
+   </view> 
+   <view class="block block-left" wx:for="{{listLi}}" wx:for-item="item">
+    <text class="amount">{{item.amount}}</text>
+    <text class="give_amount">{{item.give_amount}}</text>
+    <text class="type">{{typelist[item.type - 1]}}</text>
+     <text class="status">{{statuslist[item.status]}}</text>
+    <text class="create_time">{{item.create_time}}</text>
+   </view>  
+  </scroll-view>
+ </view>
+ <view class="top" hidden="{{hidden}}" catchtap="goTop">⇧</view>
+</view>

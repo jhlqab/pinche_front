@@ -1,0 +1,101 @@
+
+<view class="page">
+  <view class="banner" bindtap="tapBanner">
+    <image class="banner-img" src="{{bannerImgSrc}}"></image>
+  </view>
+ <view class="broadcast cf">
+    <view class="broadcast-icon" style='margin-top:10rpx;margin-right:-30px'></view>
+    <view class="broadcast-title" bindtap="tapBroadcastTitle">
+     <scroll-view class="container">
+  <view class="scrolltxt">
+    <view class="marquee_box">
+      <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+        <text style='color:#FF7F00;'>{{text}}</text>
+        <text style="margin-right:{{marquee_margin}}px;"></text>
+        <text style="margin-right:{{marquee_margin}}px;color:#FF7F00;">{{text}}</text>        
+      </view>
+    </view>
+  </view>
+</scroll-view>
+     
+    </view>
+    </view>
+    <view class="list-bd">
+      <block wx:for="{{list}}">
+      <view class="item">
+
+        <view class="list-tags">
+          
+          <text class="tag shown-top" wx:if="{{item.istop}}">置顶 </text>
+          <text class="tag bg-find-car" wx:if="{{item.type === 1}}">人找车</text>
+          <text class="tag bg-find-people" wx:if="{{item.type === 2}}">车找人</text>
+           <text class="tag bg-find-car"  style='background:#45C2FB' wx:if="{{item.type === 4}}">车找货</text>
+            <text class="tag bg-find-car"  style='background:#DF81F6' wx:if="{{item.type === 3}}">货找车</text>
+   
+         <text class="tag num" >    <text wx:if="{{item.type === 3}}">货重</text><text wx:if="{{item.type === 4}}">载重</text><text wx:if="{{item.type === 1}}">有</text><block wx:if="{{item.type === 2}}">  <text  wx:if = "{{item.user_count == 0}}"></text>
+              <text wx:else >还有</text></block>
+              <text style='color:red'  wx:if="{{item.type === 1}}"> {{item.user_count}}</text>
+                  <text style='color:red'  wx:if="{{item.type === 2}}"> {{item.user_count}}</text>
+              <text wx:if="{{item.type === 1}}">人同行</text>
+               <block wx:if="{{item.type === 2}}">
+              <text  wx:if = "{{item.user_count == 0}}">【已满座】</text>
+              <text wx:else >个座位</text>
+            </block>
+              <text wx:if="{{item.type === 3}}">{{item.weight}}</text>
+            <text wx:if="{{item.type === 4}}">{{item.weight}}</text>
+            </text>
+       
+        
+        </view>
+
+        <view class="list-address">
+          <text>{{item.from_place}}</text>
+          <view class="arr"></view>
+          <text>{{item.to_place}}</text>
+        </view>
+
+        <view class="list-time">
+          <text class="day">{{item.startday}}</text><text class="num">{{item.start_time}}出发</text>
+           <text class="day" style='float:right' wx:if="{{item.daytype === 1}}">（今天）</text>
+          <text class="day" style='float:right'  wx:if="{{item.daytype === 2}}">（明天）</text>
+        </view>
+
+        <view class="list-sub">
+          <text class="note" wx:if="{{item.mid_place}}">途径地：{{item.mid_place}}</text>
+          <text class="note" wx:if="{{item.type === 2}}">微信号：{{item.car ? item.car : '未填写'}}</text>
+           <text class="note" wx:if="{{item.type === 1}}">微信号：{{item.car ? item.car : '未填写'}}</text>
+          <text class="note" wx:if="{{item.note}}">备注：{{item.note}}</text>
+          <view class="user-info">
+            <view class="sex {{item.sex === 1 ? 'male' : 'female'}}"></view>
+            <text class="field">{{item.name}}</text>
+            <text class="field num">{{item.postdate}}</text>
+          </view>
+        </view>
+
+        <view class="list-operations has-hairline hairline-in-pseudo-top">
+          <button id="{{item.id}}" class="btn-item" bindtap="onDelete">删除</button>
+          <button class="btn-item" style='color:#FF7F00' bindtap="topPost" id="{{item.id}}" wx:if="{{!item.istop}}">置顶</button>
+          <button class="btn-item" disabled="true" wx:if="{{item.istop}}">已置顶</button>
+          <button id="{{item.id}}"  class="btn-item edit" bindtap="goEditFindCar" wx:if="{{item.type === 1}}">编辑</button>
+        <block wx:if="{{item.type === 2}}">
+          <button id="{{item.id}}"  class="btn-item edit" bindtap="goEditFindPeople">编辑</button>
+          <button id="{{item.id}}"  class="btn-item edit" bindtap="goFullPeople">满座</button>
+        </block>
+          <button id="{{item.id}}"  class="btn-item edit" bindtap="goEditGoodsFindCar" wx:if="{{item.type === 3}}">编辑</button>
+          <button id="{{item.id}}"  class="btn-item edit" bindtap="goEditCarFindgoods" wx:if="{{item.type === 4}}">编辑</button>
+        </view>
+
+      </view>
+      </block>
+    </view>
+
+    <view class="empty-plhd" wx:if="{{!list.length}}">
+      <view class=image"></view>
+      <text class="text" style='text-align:center;'>您还没有发布过任何拼车信息哦</text>
+      <text class="text" style='text-align:center;'>返回到首页发布一条吧</text>
+    </view>
+
+</view>
+<navigator open-type="switchTab" url="/page/component/index" class="fui-dot1">
+    <image style='padding:0 0 5rpx 0;' src="/page/common/images/home.png"></image>
+  </navigator>

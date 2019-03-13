@@ -1,0 +1,32 @@
+<view class="page page-state">
+    <view class="wxParse-p">
+    <text class='font-title'>常见问题及说明</text>
+    <text class='font-weight'>1.怎么找到小程序？</text>
+      <text class='text-indent2'>*在微信首页【搜索】 "{{shareDesc}}" 可以找到小程序；</text>
+      <text class='text-indent2'>*在微信6.6.1版本以上【首页】下拉，在顶部会找到使用过的小程序；</text>
+      <text class='text-indent2'>*在微信【发现 】栏的【小程序】，打开可以找到；</text>
+      <text class='text-indent2'>*点击小程序右上角的三个点，点击【添加到桌面】,以后在手机桌面上即可找到。</text>
+      <text class='font-weight'>2.发布的信息怎么不显示？</text>
+      <text class='text-indent2'>信息发布成功后，请刷新首页，系统会优先展示出发时间靠前的信息。</text>
+      <text class='text-indent2'>超过出发时间的信息系统会自动对信息进行隐藏,以减少对信息发布者的打扰，可在【我的发布】 里面查看发过的信息。</text>
+      <text class='font-weight'>3.关于赠送金额</text>
+      <text class='text-indent2'>首次成功登录小程序即可获得50元（注：只可在拼车平台使用，不能提现）。</text>
+      <text class='font-weight'>4.关于信息收费</text>
+      <text class='text-indent2'>为维护平台正常运行，平台信息为有偿发布展示，目前收费标准为每条信息1元，置顶每小时1元，最高置顶10个小时（在信息发布页有设置显示）。</text>
+      <text class='font-weight'>5.信息如何置顶？</text>
+      <text class='text-indent2'>*在信息【发布】界面有【置顶】选项，且有收费金额显示;</text>
+      <text class='text-indent2'>*发布过的信息可在【我的发布】栏找到需要置顶的信息选择【置顶】。</text>
+      <text class='font-weight'>6.如何获得推广金？</text>
+      <text class='text-indent2'>*点击小程序【首页】右上角的那三个点，选择【转发】给朋友，关注后即可获得。</text>
+      <text class='text-indent2'>*在小程序【我的】里选择【分享二维码】，将二维码图片发送给朋友，关注后即可获得。</text>
+      <text class='font-weight'>7.推广金额是多少？在那里查看？</text>
+      <text class='text-indent2'>把小程序分享给朋友后,朋友登录小程序，您便可获得推广金，每成功推广给一人即可获得 2元 推广金。系统会直接充进余额，可在【充值记录】里查看。（注：只可在拼车平台使用，不能提现）。</text>
+      <text class='font-weight'>8.发布信息时如何手动填写？</text>
+      <text class='text-indent2'>需要先禁用出发地和目的地的位置，第一次使用获取位置时点击“不允许”，已允许的用户设置方法为-【首页】右上角的三个点，选择【关于{{shareDesc}}】再点击右上角的三个点，选择【设置】，再选择关闭【地理位置】。</text>
+    </view>
+
+     <button form-type='submit' open-type="share">分享</button>
+</view>
+
+
+

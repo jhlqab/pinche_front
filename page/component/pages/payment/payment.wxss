@@ -1,0 +1,152 @@
+.contact-form .weui-cell_access:active {
+    background: rgba(0,0,0,0);
+}
+.contact-form .weui-input{ text-align: right; padding-right: 10px; box-sizing: border-box; }
+.contact-form .sex-text{ text-align: right; }
+.jishu-text{
+  position: absolute;
+ padding-bottom: 20px;
+  left: 80px;
+  right:80px;
+  font-size:12px;
+  text-align: center;
+  color: darkgray;
+}
+.pinche-type{
+  background: #fff;
+  padding:10px 15px;
+  color:#333;
+  font-size:15px;
+  margin-top:.77rem;
+}
+.submit-form-top-title.need-offsety{
+margin-top:30px;
+}
+.pay-box{
+  font-size:13px;
+    padding:10px 15px;
+    background: #fff;
+}
+.pay-box .infor{
+  display: inline-block;
+    line-height:2.3;
+}
+.pay-box  .pay-btn{
+ color: #fff;
+ }
+.switchs-box{
+   margin-top:.77rem;
+    background: #fff;
+    font-size:15px;
+    padding:10px 15px;
+ }
+ .switchs-box .switch-text{
+   display: inline-block;
+    padding-top:6px;
+ }
+ .userbackground{
+   background:#fff;
+ }
+ .username{
+   width:30px;
+   height:30px;
+   border-radius:50%;
+   display: inline-block;
+ }
+ .name{
+   display: inline-block;
+   margin: 0px 0px 0px 5px;
+   height:30px;
+   line-height: 30px;
+   text-align: center;
+   position: relative;
+   top:-10px;
+   color: #333;
+ }
+ .useramount{
+  display: inline-block;
+   margin: 0px 0px 0px 5px;
+   height:30px;
+   line-height: 30px;
+   text-align: center;
+   position: absolute;
+   top:10px;
+   right:10px;
+   color: #333;
+ }
+ .flex-wrp{
+  width:100%;
+  list-style:none;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:flex-start;
+   border:1px solid transparent;
+}
+.flex-item {
+  width: 30%;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  background-color:#fff;
+  color:#666;
+  display: block;
+  float: left;
+  margin-left: 2%;
+  margin-top:5%; 
+  position: relative;
+  border:1px solid transparent;
+   border-radius: 10px;
+} 
+.flex-wrp .chooseClass{
+  border:2px solid #FF7F00;
+    border-radius: 10px;
+  
+}
+.view-amount{
+  line-height: 40px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  font-size: 14px;
+}
+.view-give-amount{
+  padding: 0;
+  margin: 0;
+  line-height: 40px;
+  position: absolute;
+  left:-39%;
+  top:-14%;
+  background-color:#FF7F00;
+  color: #fff;
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-size: 10px;
+  transform:rotate(-45deg);
+  text-align: center;
+    border:3px solid #FF7F00;
+}
+.flex-item .hidden{
+  display: none;
+}
+.red{
+  color: #FF3600;
+  margin: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.savebtn{
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 40px;
+  background-color: #1AAD19;
+  color: white;
+}
+
+

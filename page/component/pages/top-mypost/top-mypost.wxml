@@ -1,0 +1,30 @@
+<view class="page page-form">
+    <view class="weui-cells contact-form">
+        <view class="weui-cell weui-cell_access">
+            <view class="weui-cell__hd">
+                <text class="weui-label">小时</text>
+            </view>
+            <view class="weui-cell__bd">
+                <picker bindchange="hourOnChange" value="{{defaultHour}}" range="{{hoursList}}">
+                    <view class="picker weui-select {{defaultHour !== 0 ? 'not-default-val' : ''}}">
+                        {{hoursList[defaultHour]}}
+                    </view>
+                </picker>
+            </view>
+            <view class="weui-cell__ft"></view>
+        </view>
+        <view class="weui-cell weui-cell_access">
+            <view class="weui-cell__hd">
+                <text class="weui-label">金额</text>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" disabled="true" placeholder-class="mag-plhd" placeholder="{{cost}}" />
+            </view>
+            <view class="weui-cell__ft"></view>
+        </view>
+    </view>
+    <view class="mag-submitbtn-wrap">
+        <button bindtap="saveNow" class="mag-submit-btn" type="primary" disabled="{{submitDisabled}}">确认支付</button>
+    </view>
+
+</view>

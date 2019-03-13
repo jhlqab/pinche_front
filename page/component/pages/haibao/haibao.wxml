@@ -1,0 +1,30 @@
+<view>
+  <image src="{{img}}" class='bgImg'></image>
+  <text class='mine'>绿色出行就用</text>
+  <text class='code'>{{shareDesc}}</text>
+  <text class='who'>快加我们的拼车阵营吧</text>
+
+  <text class='tishi'>分享后只要有小伙伴进入,立返推广佣金哦</text>
+  <text class='shareText'>我要分享至</text>
+  <view class='imgBox'>
+    <button open-type="share" class='zfbtn'>
+      <image src="{{wechat}}" class='img'></image>
+    </button>
+    <button class='zfbtn m_l'  bindtap='formSubmit'>
+      <image src="{{quan}}" class='img'></image>
+    </button>
+  </view>
+
+  <!--生成海报  -->
+  <!-- <view class="img-box">
+        
+    </view> -->
+  <view class='imagePathBox' hidden="{{maskHidden == false}}">
+    <image src="{{imagePath}}" class='shengcheng'></image>
+    <button class='baocun' bindtap='baocun'>保存相册，分享到朋友圈</button>
+  </view>
+  <view hidden="{{maskHidden == false}}" class="mask"></view>
+  <view class="canvas-box">
+    <canvas style="width: 375px;height: 667px;position:fixed;top:9999px" canvas-id="mycanvas" />
+  </view>
+</view>

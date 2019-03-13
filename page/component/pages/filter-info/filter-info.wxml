@@ -1,0 +1,89 @@
+<view class="page page-form">
+    
+    <view class="weui-cells__title">
+        <text>请选填筛选条件</text>
+    </view>
+
+    <view class="weui-cells">
+        <view class="weui-cell weui-cell_select weui-cell_select-after">
+           <view class="weui-cell__hd">
+               <text class="weui-label">拼车类型</text>
+           </view>
+           <view class="weui-cell__bd">
+               <picker bindchange="carpoolTypeChange" value="{{defaultCarpoolType}}" range="{{carpoolTypes}}">
+                    <view class="picker weui-select not-default-val">
+                        {{carpoolTypes[defaultCarpoolType]}}
+                    </view>
+                </picker>
+           </view>
+        </view>
+        <view class="weui-cell">
+            <view class="weui-cell__hd">
+                <text class="weui-label">出发地</text>
+            </view>
+            <view class="weui-cell__bd">
+                <input class="weui-input" bindinput="onFromPlace" placeholder-class="mag-plhd" placeholder="请填写出发地" value="{{from_place}}" />
+            </view>
+        </view>
+        <view class="weui-cell">
+           <view class="weui-cell__hd">
+               <text class="weui-label">目的地</text>
+           </view>
+           <view class="weui-cell__bd">
+               <input class="weui-input" bindinput="onToPlace" placeholder-class="mag-plhd" placeholder="请填写目的地" value="{{to_place}}" />
+           </view>
+        </view>
+         <view class="weui-cell">
+           <view class="weui-cell__hd">
+               <text class="weui-label">途经地</text>
+           </view>
+           <view class="weui-cell__bd">
+               <input class="weui-input" bindinput="onMiddlePlace" placeholder-class="mag-plhd" placeholder="选填途经地" value="{{mid_place}}" />
+           </view>
+        </view>
+        <view class="weui-cell weui-cell_select weui-cell_select-after">
+           <view class="weui-cell__hd">
+               <text class="weui-label">出发日期</text>
+           </view>
+           <view class="weui-cell__bd">
+               <picker mode="date" bindchange="dateChange" value="{{date}}" start="{{date}}">
+                    <view class="picker weui-select not-default-val">
+                        {{date}}
+                    </view>
+                </picker>
+           </view>
+        </view>
+        <view class="weui-cell weui-cell_select weui-cell_select-after">
+           <view class="weui-cell__hd">
+               <text class="weui-label">出发时间</text>
+           </view>
+           <view class="weui-cell__bd">
+               <picker mode="time" bindchange="timeChange" value="{{time}}">
+                    <view class="picker weui-select not-default-val">
+                        {{time}}
+                    </view>
+                </picker>
+           </view>
+        </view>
+        <view class="weui-cell weui-cell_select weui-cell_select-after">
+           <view class="weui-cell__hd">
+               <text class="weui-label">空位/人数</text>
+           </view>
+           <view class="weui-cell__bd">
+               <picker bindchange="chooseCountChange" value="{{defaultChooseCount}}" range="{{chooseCount}}">
+                    <view class="picker weui-select {{defaultChooseCount !== 0 ? 'not-default-val' : ''}}">
+                        {{chooseCount[defaultChooseCount]}}
+                    </view>
+                </picker>
+           </view>
+        </view>
+    </view>
+
+    <view class="mag-submitbtn-wrap">
+        <button class="mag-submit-btn" type="primary" bindtap="filterNow">确定</button>
+    </view>
+    
+
+</view>
+
+

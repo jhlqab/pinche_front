@@ -1,0 +1,65 @@
+  <!--<view class="banner" bindtap="tapBanner">
+    <image class="banner-img" src="{{bannerImgSrc}}"></image>
+  </view>
+-->
+<view class="header">
+  <view class="header_text">说明：本联盟全国招募拼车小程序，具体联系aijiaxiaoxue。以下为测试数据，实际未关联小程序，请悉知！</view>
+</view>
+
+<view class="container" style='margin-top:10px;'>
+
+
+
+<view class="bpic_list">
+<view  class="menu_icon" bindtap="tiaozhuan">
+<image src="{{img}}"></image>
+<view class="menu_text">
+拼车联盟成员：<text style="color:red;">【银川微出行】  </text>
+
+点击进入小程序<text style="color:red;">{{item.money}}</text>
+</view>
+</view>
+</view>
+
+
+<view class="bpic_list">
+<view  class="menu_icon" bindtap="shouye">
+<image src="{{img}}"></image>
+<view class="menu_text">
+拼车联盟成员：<text style="color:red;">【吴忠出行】  </text>
+
+点击进入小程序<text style="color:red;">{{item.money}}</text>
+</view>
+</view>
+</view>
+
+
+
+<view class="bpic_list">
+<view  class="menu_icon" bindtap="shouye">
+<image src="{{img}}"></image>
+<view class="menu_text">
+拼车联盟成员：<text style="color:red;">【固原出行】  </text>
+
+点击进入小程序<text style="color:red;">{{item.money}}</text>
+</view>
+</view>
+</view>
+
+
+
+<view class="bpic_list">
+<view  class="menu_icon" bindtap="shouye">
+<image src="{{img}}"></image>
+<view class="menu_text">
+拼车联盟成员：<text style="color:red;">【中卫出行】  </text>
+
+点击进入小程序<text style="color:red;">{{item.money}}</text>
+</view>
+</view>
+</view>
+
+</view>
+
+
+

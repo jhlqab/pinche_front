@@ -1,0 +1,46 @@
+
+.block {
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx;
+  background-color: #fff;
+  font-size:13px;
+}
+.top {
+  width: 100rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #fff;
+  position: fixed;
+  bottom: 40rpx;
+  right: 20rpx;
+  text-align: center;
+  font-size: 50rpx;
+  opacity: .8;
+  border-radius: 50%;
+  border: 1px solid #fff; 
+}
+.amount{
+  display: inline-block;
+  width: 20%;
+  text-align: center
+}
+.give_amount{
+  display: inline-block;
+  width: 20%;
+  text-align: center
+}
+.type{
+  display: inline-block;
+  width: 15%;
+  text-align: center
+}
+.status{
+  display: inline-block;
+  width: 15%;
+  text-align: center
+}
+.create_time{
+  display: inline-block;
+  width: 30%;
+  text-align: center
+}

@@ -1,0 +1,21 @@
+<view class="page">
+
+    <view class="head">
+        <text class="title">发布拼车信息</text>
+        <text class="money">¥1.00</text>
+    </view>
+
+    <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+            <view class="weui-form-preview__item">
+                <text class="weui-form-preview__label">收款方</text>
+                <text class="weui-form-preview__value">莒州拼车</text>
+            </view>
+        </view>
+    </view>    
+
+    <view class="mag-submitbtn-wrap">
+        <button bindtap="payNow" class="mag-submit-btn" type="primary">立即支付</button>
+    </view>    
+
+</view>

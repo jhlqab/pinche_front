@@ -1,0 +1,27 @@
+<view class="page page-form">
+  <view class="userbackground pay-box  clearfix submit-form-top-title">
+     <image class='username'  src='{{userimg}}'></image>
+     <text class='name'>{{username}}</text>
+     <text class='useramount'>余额：<text style='color:red'>¥{{useramount}}</text></text>
+  </view>
+  <view style='height:30px'></view>
+  <view class="flex-wrp" >
+     <view data-amount="{{item.amount}}" data-id="{{index}}" class="flex-item  {{classindex == index ? 'chooseClass' : ''}}" bindtap='chooseClick' wx:key="paySetting"  wx:for="{{paySetting}}" wx:for-item="item"> 
+        <text wx:if="{{item.give_amount == 0}}"  class='view-give-amount hidden'></text> 
+        <text wx:else  class='view-give-amount'>赠{{item.give_amount}}元</text> 
+        <text  class='view-amount' acount='{{item.amount}}'>{{item.amount}}元</text> 
+    </view>  
+  </view>
+  <view style='height:30px'></view>
+   <view class="contact-form red">
+      <text class=''>温馨提示：充值的赠送金额不能提现，仅在拼车平台发布信息使用</text>
+  </view>  
+  <view class=" contact-form">
+    <view bindtap="aboutOuer" class="weui-cell weui-cell_access">
+       <button class='savebtn' bindtap='payfn'>微信支付</button> 
+    </view>
+  </view>
+</view>
+
+
+<view class="jishu-text">小宝程序 提供技术支持</view>

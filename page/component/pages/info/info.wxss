@@ -1,0 +1,42 @@
+/*照片1半f列表*/
+.bpic_list{
+ 
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  align-items:flex-start;
+  justify-content:flex-start;
+  margin:0 1%;
+ 
+}
+.bpic_list .menu_icon{
+  width:100%;
+  text-align: center;
+  height:300rpx;
+  margin-bottom: 15rpx;
+   padding:10rpx 0;
+    background: #ffffff;
+}
+.bpic_list .menu_icon image{
+  width:98%;
+  height:240rpx;
+  border-radius:10rpx;
+}
+.bpic_list .menu_text{
+   font-size: 26rpx;
+   height: 30rpx;
+   line-height: 30rpx;
+}
+.banner{ height: 187.5rpx; }
+.banner-img{ width:100%; height: 100%; }
+.header {
+  background-color: white;
+  padding: 30rpx;
+}
+
+.header_text {
+  background-color: #e6f5ff;
+  padding: 20rpx 30rpx;
+  font-size: 26rpx;
+  color: #999;
+}
