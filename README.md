@@ -13,3 +13,6 @@
 进入拼车信息详情页
 可以查看拼车的轨迹路线
 可以复制微信号和拨打电话等方式进行联系
+
+小程序二维码
+![小程序二维码](https://github.com/jhlqab/pinche_front/blob/master/photo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190311123951.png)
